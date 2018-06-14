@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- ROSCORE -->
+	<master auto="start"/>
+  <!--  Stage Simulator -->
+  	<node pkg="stage_ros" type="stageros" name="stageros" args="$(find swarm_stage_ros)/launch/custom.world" respawn="true" output="log"/> 
+        <node name="robot0" pkg="swarm_stage_ros" type="posctrl" args="robot_0" output="screen"/>
+        <node name="robot1" pkg="swarm_stage_ros" type="posctrl" args="robot_1" output="screen"/>
+        <node name="robot2" pkg="swarm_stage_ros" type="posctrl" args="robot_2" output="screen"/>
+        <node name="robot3" pkg="swarm_stage_ros" type="posctrl" args="robot_3" output="screen"/>
+        <node name="robot4" pkg="swarm_stage_ros" type="posctrl" args="robot_4" output="screen"/>
+        <node name="robot5" pkg="swarm_stage_ros" type="posctrl" args="robot_5" output="screen"/>
+        <node name="robot6" pkg="swarm_stage_ros" type="posctrl" args="robot_6" output="screen"/>
+        <node name="robot7" pkg="swarm_stage_ros" type="posctrl" args="robot_7" output="screen"/>
+        <node name="robot8" pkg="swarm_stage_ros" type="posctrl" args="robot_8" output="screen"/>
+        <node name="robot9" pkg="swarm_stage_ros" type="posctrl" args="robot_9" output="screen"/>
+        <node name="robot10" pkg="swarm_stage_ros" type="posctrl" args="robot_10" output="screen"/>
+        <node name="robot11" pkg="swarm_stage_ros" type="posctrl" args="robot_11" output="screen"/>
+        <node name="robot12" pkg="swarm_stage_ros" type="posctrl" args="robot_12" output="screen"/>
+        <node name="robot13" pkg="swarm_stage_ros" type="posctrl" args="robot_13" output="screen"/>
+        <node name="robot14" pkg="swarm_stage_ros" type="posctrl" args="robot_14" output="screen"/>
+        <node name="robot15" pkg="swarm_stage_ros" type="posctrl" args="robot_15" output="screen"/>
+        <node name="robot16" pkg="swarm_stage_ros" type="posctrl" args="robot_16" output="screen"/>
+        <node name="robot17" pkg="swarm_stage_ros" type="posctrl" args="robot_17" output="screen"/>
+        <node name="robot18" pkg="swarm_stage_ros" type="posctrl" args="robot_18" output="screen"/>
+        <node name="robot19" pkg="swarm_stage_ros" type="posctrl" args="robot_19" output="screen"/>
+        <node name="controller" pkg="swarm_stage_ros" type="controller" args="20" output="screen"/>
+        <include file="$(find swarm_stage_ros)/launch/tf.launch"/>
+</launch>

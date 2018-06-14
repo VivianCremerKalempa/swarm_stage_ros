@@ -1,0 +1,5 @@
+<launch>
+  <node name="swarm_stage" pkg="swarm_stage_ros" type="swarm_stage" respawn="false" output="screen">
+   <rosparam file="$(find swarm_stage_ros)/yaml/swarm.yaml" command="load" />
+  </node>
+</launch>
