@@ -1,19 +1,19 @@
 swarm:
-   formation: 'square' #no, wedge, square or diamond
-   robots: 0 #used to "no" formation
+   formation: 'no' #no, wedge, square or diamond
+   robots: 3 #used to "no" formation
    random_colors: 'yes' #yes or no
-   side: 6 #number of robots per side 
+   side: 5 #number of robots per side
    completed: 'no' #when used formation
    leader: 'no'  #yes or no
    leader_sonar_sensor: 0 #0, 1  or 3
-   leader_laser_sensor: 0 #0 or 1
+   leader_laser_sensor: 'no' #yes or no
    other_robots_sonar_sensor: 0 #0, 1  or 3, use this field for formation = 'no'
-   other_robots_laser_sensor: 0 #0 or 1
+   other_robots_laser_sensor: 'no' #yes or no
    scenario: 'stadium' #stadium, forest or hospital
-   position_controller: 'true' #true or false 
-   reference: 'relative' #relative(odom) or global
-   publish_tf: 'yes' #yes or no, use this field when reference = "relative"
+   position_controller: 'yes' #yes or no 
+   reference: 'global' #relative(odom) or global
+   publish_tf: 'no' #yes or no, use this field when reference = "relative"
 
-run: true
+run: 'yes'
 
 
