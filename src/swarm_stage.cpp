@@ -10,7 +10,7 @@
 using Eigen::MatrixXd;
 
 std::string colors(int value, std::string random_colors, bool leader);
-std::string sensors(int sonar, std::string laser);
+std::string sensors(int sonar, std::string laser); 
 bool xaxis(int y, int originY);
 bool yaxis(int x, int originX);
 bool circle(int x, int y, int originX, int originY, int radius);
