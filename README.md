@@ -6,7 +6,7 @@ A ROS package that automatically configures a swarm robot simulator, aiming the 
 
 The swarm_stage_ros package can be installed on your workspace:
 
-> cd /home/user/catkin_ws/src
+> cd /home/user/catkin_ws/src 
 > git clone https://github.com/VivianCremerKalempa/swarm_stage_ros
 > cd ..
 > catkin_make
