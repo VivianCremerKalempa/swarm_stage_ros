@@ -38,15 +38,12 @@ At the end of processing, two files are generated: custom.world and controller.l
 The controller.launch file is generated in order to run the environment that has just been created:
 
 ```xml
-<myxml>
-   <someElement />
 <?xml version="1.0"?>
 <launch>
   <!-- ROSCORE -->
 	<master auto="start"/>
   <!--  Stage Simulator -->
   	<node pkg="stage_ros" type="stageros" name="stageros" args="$(find swarm_stage_ros)/launch/custom.world" respawn="true" output="log"/>  </launch>
-</myxml>
 ```
 
 
